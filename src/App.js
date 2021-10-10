@@ -1,10 +1,10 @@
 import React from "react";
+import UesrList from "./UserList";
 import './App.css'
-import InputSample from "./InputSample";
 
 function App() {
   return (
-    <InputSample/>
+    <UesrList/>
   );
 }
 
