@@ -1,16 +1,11 @@
 import React from "react";
-import Hello from "./Hello";
 import './App.css'
-import Wrapper from "./Wrapper";
+import Counter from "./Counter";
 
 function App() {
   const test = 'name'
   return (
-    <Wrapper>
-      {/* 주석 */}
-      <Hello isSpecial={false}/>
-      <div className="App-link">{test}</div>
-    </Wrapper>
+    <Counter/>
   );
 }
 
