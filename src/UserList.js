@@ -1,6 +1,6 @@
 import React , {useEffect} from "react";
 
-function User({user , onRemove, onToggle}){
+const User = React.memo(function User({user , onRemove, onToggle}){
     const {username , email , id, active} = user;
     useEffect(() => {
 
@@ -14,7 +14,7 @@ function User({user , onRemove, onToggle}){
     </div>
     
     )
-}
+})
 
 function UesrList({users , onRemove, onToggle}){
     
@@ -29,4 +29,4 @@ function UesrList({users , onRemove, onToggle}){
     );
 }
 
-export default UesrList
+export default React.memo(UesrList)
